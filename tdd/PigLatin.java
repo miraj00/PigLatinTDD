@@ -14,6 +14,8 @@ public class PigLatin {
 		return (ch == 'a' || ch == 'e' || ch == 'i'|| ch == 'o'|| ch == 'u');
 	} 
 	
+	
+	
 
 	public static String translate (String userWordInput) {
 		
@@ -25,22 +27,24 @@ public class PigLatin {
 			int stringlength=userInput.length();   
 		
 			int index=-1;   
-			
+			String output = "";
+			String pigLatin = "";
 			for (int i=0; i<stringlength; i++){   
 				
 				if (isVowel(userInput.charAt(i))){   
-					index=i;   
-					break;   
-				}   
+					index=i;
+					
+				    output = userInput.substring(index) + userInput.substring(0, index);  
+
+			    //  System.out.println( "inside :"  + output);
+					break; 
+				}
+								
 			}   
 			
-			//Pig Latin is possible only if vowels is present   
-				if(index==-1) {   
-					return "-1";   
-				}	
-		
-		// Take all characters after index (including index). Append all characters which are before index. Finally append "ay"   
-		 return userInput.substring(index) + userInput.substring(0, index) + "ay";   			  		
+			pigLatin = output + (isVowel(userInput.charAt(0))  ? "way" : "ay");
+				  		
+			return pigLatin;
 	}		
 		
 

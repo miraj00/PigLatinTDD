@@ -6,125 +6,111 @@ import org.junit.Test;
 
 public class piglatinTest {
 
+	
 	@Test
 	public void apple() {
-		PigLatin newString = new PigLatin ();
-		String translatedName = newString.translate("aaple");
-		assertEquals("aapleay", translatedName);		
+		String translatedName = PigLatin.translate("aaple");
+		assertEquals("aapleway", translatedName);		
 	}
 	
 	@Test
 	public void elseWord() {
-		PigLatin newString = new PigLatin ();
-		String translatedName = newString.translate("else");
-		assertEquals("elseay", translatedName);		
+		
+		String translatedName = PigLatin.translate("else");
+		assertEquals("elseway", translatedName);		
 	}
 	
 	@Test
 	public void giraffe() {
-		PigLatin newString = new PigLatin ();
-		String translatedName = newString.translate("giraffe");
+		
+		String translatedName = PigLatin.translate("giraffe");
 		assertEquals("iraffegay", translatedName);		
 	}
 	
 	
 	@Test
 	public void test1() {
-		PigLatin newString = new PigLatin ();
-		String translatedName = newString.translate("AAlOk");
-		assertEquals("aalokay", translatedName);		
+		String translatedName = PigLatin.translate("AAlOk");
+		assertEquals("aalokway", translatedName);		
 	}
 	
 	@Test
 	public void test2() {
-		PigLatin newString = new PigLatin ();
-		String translatedName = newString.translate("eMage");
-		assertEquals("emageay", translatedName);		
+		String translatedName = PigLatin.translate("eMage");
+		assertEquals("emageway", translatedName);		
 	}
 	
 	@Test
 	public void test3() {
-		PigLatin newString = new PigLatin ();
-		String translatedName = newString.translate("imli");
-		assertEquals("imliay", translatedName);		
+		String translatedName = PigLatin.translate("imli");
+		assertEquals("imliway", translatedName);		
 	}
 	
 	
 	@Test
 	public void test4() {
-		PigLatin newString = new PigLatin ();
-		String translatedName = newString.translate("OraNge");
-		assertEquals("orangeay", translatedName);		
+		String translatedName = PigLatin.translate("OraNge");
+		assertEquals("orangeway", translatedName);		
 	}
 	
 	@Test
 	public void test5() {
-		PigLatin newString = new PigLatin ();
-		String translatedName = newString.translate("UmbRelLa");
-		assertEquals("umbrellaay", translatedName);		
+		String translatedName = PigLatin.translate("UmbRelLa");
+		assertEquals("umbrellaway", translatedName);		
 	}
 
 	
 	@Test
 	public void test6() {
-		PigLatin newString = new PigLatin ();
-		String translatedName = newString.translate("SaMudra");
+		String translatedName = PigLatin.translate("SaMudra");
 		assertEquals("amudrasay", translatedName);		
 	}
 
 	@Test
 	public void test7() {
-		PigLatin newString = new PigLatin ();
-		String translatedName = newString.translate("harry");
+		String translatedName = PigLatin.translate("harry");
 		assertEquals("arryhay", translatedName);		
 	}
 	
 	@Test
 	public void test8() {
-		PigLatin newString = new PigLatin ();
-		String translatedName = newString.translate("NiceIDEA");
+		String translatedName = PigLatin.translate("NiceIDEA");
 		assertEquals("iceideanay", translatedName);		
 	}
 	
 	@Test
 	public void testCapitalToLower() {
-		PigLatin newString = new PigLatin ();
-		String translatedName = newString.translate("INKPEN");
-		assertEquals("inkpenay", translatedName);		
+		String translatedName = PigLatin.translate("INKPEN");
+		assertEquals("inkpenway", translatedName);		
 	}	
 	
 	@Test
 	public void oneConstantExample1() {
-		PigLatin newString = new PigLatin ();
-		String translatedName = newString.translate("harry");
+		String translatedName = PigLatin.translate("harry");
 		assertEquals("arryhay", translatedName);		
 	}
 	
 	@Test
 	public void oneConstantExample2() {
-		PigLatin newString = new PigLatin ();
-		String translatedName = newString.translate("INKPEN");
-		assertEquals("inkpenay", translatedName);		
+		String translatedName = PigLatin.translate("INKPEN");
+		assertEquals("inkpenway", translatedName);		
 	}
 		
 	@Test
 	public void startsWith2Consonants() {
-		PigLatin newString = new PigLatin ();
-		String translatedName = newString.translate("SpAIN");
+		String translatedName = PigLatin.translate("SpAIN");
 		assertEquals("ainspay", translatedName);		
 	}
 	
 	@Test
 	public void startsWith2Consonants2() {
-		PigLatin newString = new PigLatin ();
-		String translatedName = newString.translate("brazil");
+		String translatedName = PigLatin.translate("brazil");
 		assertEquals("azilbray", translatedName);		
 	}
 	
 	@Test
 	public void startsWithMoreConsonants() {
-		PigLatin newString = new PigLatin ();
-		String translatedName = newString.translate("FGHJKLMNOpW");
+		String translatedName = PigLatin.translate("FGHJKLMNOpW");
 		assertEquals("opwfghjklmnay", translatedName);		
 	}	
 	
